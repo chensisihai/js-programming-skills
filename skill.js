@@ -20,6 +20,10 @@
   function isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
   }
+  或者
+  function isArray(obj) {
+     return obj instanceof Array
+  }
   
 3、获取数组中最大或者最小值
 
