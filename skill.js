@@ -20,7 +20,7 @@
   function isArray(obj) {
       return Object.prototype.toString.call(obj) === '[object Array]';
   }
-  或者
+  // 或者
   function isArray(obj) {
      return obj instanceof Array
   }
