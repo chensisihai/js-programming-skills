@@ -24,6 +24,8 @@
   function isArray(obj) {
      return obj instanceof Array
   }
+  // 或者
+  Array.isArray()
   
 3、获取数组中最大或者最小值
 
