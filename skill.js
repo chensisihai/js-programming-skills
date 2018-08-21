@@ -54,7 +54,7 @@
     }
     
     function last(arr) {
-        return arr[arr.length -1]'
+        return arr[arr.length -1];
     }
 
 7、数组去重
