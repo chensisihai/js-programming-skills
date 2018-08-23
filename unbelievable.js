@@ -13,3 +13,4 @@
     console.log(arr[5]) // undefined
     
     
+2、 console.log([,,].length) // 2
