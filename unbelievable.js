@@ -13,4 +13,4 @@
     console.log(arr[5]) // undefined
     
     
-2、 console.log([,,].length) // 2
+2、 console.log([,,].length) // 2 或者 3  ie8 浏览器上结果为3
