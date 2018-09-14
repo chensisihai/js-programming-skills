@@ -33,20 +33,20 @@
 
 4、// 为了保证页面输出安全，我们经常需要对一些特殊的字符进行转义，请写一个函数escapeHtml，将<, >, &, “进行转义
 
-    function escapeHtml(str) {
-        return str.replace(/[<>”&]/g, function(match) {
-            switch (match) {
-                   case “<”:
-                      return “<”;
-                   case “>”:
-                      return “>”;
-                   case “&”:
-                      return “&”;
-                   case “\””:
-                      return “"”;
-              }
-          });
-    }
+//     function escapeHtml(str) {
+//         return str.replace(/[<>”&]/g, function(match) {
+//             switch (match) {
+//                    case “<”:
+//                       return “<”;
+//                    case “>”:
+//                       return “>”;
+//                    case “&”:
+//                       return “&”;
+//                    case “\””:
+//                       return “"”;
+//               }
+//           });
+//     }
 
 5、 foo = foo ||bar // 这行代码是什么意思？为什么要这样写？
     //  等价于
