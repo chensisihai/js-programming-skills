@@ -68,3 +68,21 @@
            console.log(a);   
        })(i),0); 
    };
+
+7、 Math.ceil()用作向上取整。
+    Math.floor()用作向下取整。
+    Math.round() 我们数学中常用到的四舍五入取整。
+
+    console.log(0.6|0)//0
+    console.log(1.1|0)//1
+    console.log(3.65555|0)//3
+    console.log(5.99999|0)//5
+    console.log(-7.777|0)//-7
+
+    console.log(3|4); //7
+    console.log(4|4);//4
+    console.log(8|3);//11
+    console.log(5.3|4.1);//5
+    console.log(9|3455);//3455
+
+    // 单竖线 '|'运算就是 转换为2进制之后相加得到的结果， 和0运算时向下取整
