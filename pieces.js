@@ -86,3 +86,22 @@
     console.log(9|3455);//3455
 
     // 单竖线 '|'运算就是 转换为2进制之后相加得到的结果， 和0运算时向下取整
+
+8、//  全局变量和局部变量
+    var f = true;
+    if (f === true) {
+      var a = 10;
+    }
+
+    function fn() {
+      var b = 20;
+      c = 30;
+    }
+
+    fn();
+    console.log(a);
+    console.log(b);
+    console.log(c);
+
+    // a: 10, b: 报错， c: 30
+    // js中在function内的新声明的变量才是局部变量， 没有用var声明的变量在哪里都是全局变量
