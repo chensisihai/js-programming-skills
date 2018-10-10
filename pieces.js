@@ -105,3 +105,47 @@
 
     // a: 10, b: 报错， c: 30
     // js中在function内的新声明的变量才是局部变量， 没有用var声明的变量在哪里都是全局变量
+
+9、// 实现快速排序
+
+      function quickSort(arr) {
+            if (arr.length <= 1) {
+                return arr;
+            }
+            var leftArr = [];
+            var rightArr = [];
+            var x = Math.floor(arr.length / 2)
+            var midNum = arr.splice(x, 1);
+            
+            for (var i = 0; i < arr.length; i++) {
+                if (arr[i] <= midNum[0]) {
+                    leftArr.push(arr[i]);
+                } else {
+                    rightArr.push(arr[i]);
+                }
+            }
+
+            return quickSort(leftArr).concat(midNum, quickSort(rightArr));
+        }
+
+        var arrtest = [1, 7, 2, 9, 4, 8];
+        console.log(quickSort(arrtest));
+
+10、 // null和undefined的区别？
+     // null是一个表示”无”的对象，转为数值时为0；undefined是一个表示”无”的原始值，转为数值时为NaN。
+
+     // 当声明的变量还未被初始化时，变量的默认值为undefined。
+
+     // null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。
+
+     // undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：
+
+        // （1）变量被声明了，但没有赋值时，就等于undefined。
+        // （2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。
+        // （3）对象没有赋值的属性，该属性的值为undefined。
+        //（4）函数没有返回值时，默认返回undefined。
+
+     // null表示”没有对象”，即该处不应该有值。典型用法是：
+
+        // （1） 作为函数的参数，表示该函数的参数不是对象。
+        // （2） 作为对象原型链的终点。
